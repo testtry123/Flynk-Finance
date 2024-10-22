@@ -83,7 +83,7 @@ async function scrapeKantipurFinanceNews() {
         }
 
         financeNews = [...finalfinanceNewsData];
-        console.log(financeNews)
+        // console.log(financeNews)
         console.log('All finanace news data scraped successfully');
     } catch (error) {
         console.error('Error scraping Kantipur Finanace News.', error);

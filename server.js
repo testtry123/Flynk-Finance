@@ -24,6 +24,10 @@ app.use('/api/finance', financeRoutes);
 app.use('/api/tts', ttsRoutes);
 app.use('/api/paraphrase', paraphraseRoutes);
 
+app.get('/api/test', (req, res) => {
+    res.json({ message: 'Server is working' });
+});
+
 scrapeKantipurFinanceNews();
 
 cron.schedule('*/59 * * * *', async () => {
